@@ -32,6 +32,7 @@ namespace Repaso_Net.Areas.Identity.Pages.Account
                 return RedirectToPage("/Index");
             }
 
+            
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null)
             {

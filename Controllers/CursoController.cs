@@ -32,15 +32,18 @@ namespace Repaso_Net.Controllers {
         public IActionResult Index(){
             return View(_context.DataCursos);
         }
+
+        [Authorize(Roles = "administrador")]
         public IActionResult RegistrarCurso() {
 
             var usuarios = _userManager.GetUsersInRoleAsync("profesor").Result;
             ViewBag.items = usuarios;
-
+            
             return View();
               
         }
-
+        
+         [Authorize(Roles = "administrador")]
          [HttpPost]
         public IActionResult RegistrarCurso(Curso curso , string profesor , List<IFormFile> files){
             var flag = false;
@@ -107,8 +110,15 @@ namespace Repaso_Net.Controllers {
              return View(cursos);
          }
          
+         public IActionResult VerCurso(int id){
+
+             var curso = _context.DataCursos.Find(id);
+             return View(curso);             
+
+         }
 
           
+          [Authorize(Roles = "administrador")]
          public IActionResult EditarCurso(int id){
 
                var curso = _context.DataCursos.Include(e => e.usuario).FirstOrDefault(s => s.Id == id);
@@ -128,7 +138,8 @@ namespace Repaso_Net.Controllers {
 
          }
 
-         
+            
+           [Authorize(Roles = "administrador")]
            [HttpPost]
          public IActionResult EditarCurso([Bind("Id , nombre , fechaInicio , fechafin , horario , cupo , informacion, precio , nombrefile , fileBase64")] Curso curso , string profesor , List<IFormFile> files){
             var flag = false;
@@ -201,7 +212,8 @@ namespace Repaso_Net.Controllers {
              return View(curso);
          }
          
-
+           
+          [Authorize(Roles = "administrador")]
           public IActionResult EliminarCurso(int id){
             
              var curso = _context.DataCursos.Find(id);
