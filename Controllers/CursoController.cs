@@ -28,10 +28,6 @@ namespace Repaso_Net.Controllers {
             _context = context;
             _userManager = userManager;
         }
-        
-        public IActionResult Index(){
-            return View(_context.DataCursos);
-        }
 
         [Authorize(Roles = "administrador")]
         public IActionResult RegistrarCurso() {

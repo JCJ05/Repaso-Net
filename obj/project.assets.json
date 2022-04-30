@@ -7795,24 +7795,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Julio\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\maran\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "c:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
       "projectName": "Repaso-Net",
       "projectPath": "c:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
       "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
       "outputPath": "c:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\obj\\",
+=======
+      "projectUniqueName": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
+      "projectName": "Repaso-Net",
+      "projectPath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
+      "packagesPath": "C:\\Users\\maran\\.nuget\\packages\\",
+      "outputPath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\obj\\",
+>>>>>>> afc67e07d4a67c50a11c8fb3f33f2cf78fde3272
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\maran\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7881,6 +7884,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.15, 5.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7889,7 +7898,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
