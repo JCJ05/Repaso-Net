@@ -115,18 +115,105 @@ namespace Repaso_Net.Controllers {
 
                    return NotFound();
                }
-              
+
+               var usuarios = _userManager.GetUsersInRoleAsync("profesor").Result;
+               var coments =  usuarios.Where(e => e.Id != curso.usuario.Id).ToList();
                var usuario = _context.DataUsuarios.Find(curso.usuario.Id);
-               var usuarios = _context.DataUsuarios.Where(s => s.Id != curso.usuario.Id).ToList();
                
-               ViewBag.items = usuarios;
+               ViewBag.items = coments;
                ViewBag.item = usuario;
                return View(curso);
 
          }
 
          
-           
+           [HttpPost]
+         public IActionResult EditarCurso([Bind("Id , nombre , fechaInicio , fechafin , horario , cupo , informacion, precio , nombrefile , fileBase64")] Curso curso , string profesor , List<IFormFile> files){
+            var flag = false;
+            var usuarios = _userManager.GetUsersInRoleAsync("profesor").Result;
+            var coments = usuarios.Where(e => e.Id != profesor).ToList();
+            var usuario = _context.DataUsuarios.Find(profesor);
+            
+
+             if(ModelState.IsValid){
+
+               if(files.Count > 0){
+
+                    foreach(var file in files){
+
+                       Console.WriteLine(Path.GetExtension(file.FileName).Substring(1));
+
+                        if(Path.GetExtension(file.FileName).Substring(1) == "png" || Path.GetExtension(file.FileName).Substring(1) == "jpg"  || Path.GetExtension(file.FileName).Substring(1) == "jpeg" ){
+                      
+                          Stream str = file.OpenReadStream();
+                          BinaryReader br = new BinaryReader(str);
+                          Byte [] fileDet = br.ReadBytes((Int32) str.Length);
+                          curso.archivo = fileDet;
+                          curso.nombrefile = Path.GetFileName(file.FileName);
+                          curso.fileBase64 = Convert.ToBase64String(fileDet);
+
+                        }else {
+                            
+                            flag = true;
+                            break;
+                
+                        }
+
+ 
+                    }
+
+                  
+
+               }else {
+
+                  var course = _context.DataCursos.AsNoTracking().Where(s => s.Id == curso.Id).FirstOrDefault();
+                  curso.archivo = course.archivo;
+                  curso.nombrefile = course.nombrefile;
+                  curso.fileBase64 = course.fileBase64;
+
+
+               }
+
+                 if(flag == true){
+                    
+                    
+                     ViewBag.items = coments;
+                     ViewBag.item = usuario;
+                     ModelState.AddModelError("files" , "Solo se aceptan imagenes y no otro tipo de archivo");
+                     return View(curso);
+                }
+
+                
+                 curso.usuario = usuario;
+                 _context.Update(curso);
+                 _context.SaveChanges();
+                 return RedirectToAction("ListarCursos");
+
+             }
+
+
+            
+             ViewBag.items = coments;
+             ViewBag.item = usuario;
+            
+             return View(curso);
+         }
+         
+
+          public IActionResult EliminarCurso(int id){
+            
+             var curso = _context.DataCursos.Find(id);
+
+             if(curso == null){
+
+                 return NotFound();
+             }
+
+             _context.DataCursos.Remove(curso);
+             _context.SaveChanges();
+
+            return RedirectToAction("ListarCursos");
+       }
        
         
     }

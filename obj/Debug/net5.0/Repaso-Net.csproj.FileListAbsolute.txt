@@ -355,3 +355,4 @@ D:\Documentos\USMP\Semestre virtual 2022 - I\Ingeniería de Software II\ASUP\Rep
 D:\Documentos\USMP\Semestre virtual 2022 - I\Ingeniería de Software II\ASUP\Repaso-Net\obj\Debug\net5.0\Repaso-Net.genruntimeconfig.cache
 D:\Documentos\USMP\Semestre virtual 2022 - I\Ingeniería de Software II\ASUP\Repaso-Net\obj\Debug\net5.0\ref\Repaso-Net.dll
 >>>>>>> 51b080c2fb62a8af0405f4c20c1ee6d0d7f1d176
+C:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Views\Curso\EditarCurso.cshtml.g.cs

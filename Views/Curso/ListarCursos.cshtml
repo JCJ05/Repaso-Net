@@ -31,6 +31,8 @@
         <th>Profesor</th>
         <th>Precio</th>
         <th>Imagenes</th>
+        <th> Editar </th>
+        <th> Eliminar </th>
           
     </tr>  
 
@@ -50,6 +52,8 @@
          <td> @Html.DisplayFor(modelItem => item.usuario.nombres) </td>
          <td> @Html.DisplayFor(modelItem => item.precio) </td>
          <td> <img src="data:image/png;base64,@item.fileBase64" /> </td>
+         <td> <a class="btn btn-info" asp-controller="Curso" asp-action="EditarCurso" asp-route-id="@item.Id">Editar</a> </td>   
+         <td> <a class="btn btn-danger" asp-controller="Curso" asp-action="EliminarCurso" asp-route-id="@item.Id" >Eliminar</a></td> 
          
     </tr>  
 }  

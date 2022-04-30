@@ -15664,6 +15664,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Views\\Curso\\EditarCurso.cshtml",
+      "TargetPath": "Views\\Curso\\EditarCurso.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Views\\Curso\\RegistrarCurso.cshtml",
       "TargetPath": "Views\\Curso\\RegistrarCurso.cshtml",
       "FileKind": "mvc"
