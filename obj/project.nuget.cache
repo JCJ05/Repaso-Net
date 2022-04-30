@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aeKDESvdokPUVXnNRBi71CZDRk/tufR/v9Fikfoqs5wNH1ICqzqynnIoE0oKRTJ1yCxGQvyGXMU/KazAIL6Zow==",
+  "dgSpecHash": "EH9JVfB/8PCdU4Ktk3/ot4APfaGnCr57fkrQ/rD6r+ntIUpuFZb+CnVE7pRFMyB2ggn3UI0hoB2Kwyzqb5p36Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
+  "projectFilePath": "c:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
@@ -145,12 +145,5 @@
     "C:\\Users\\Julio\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
