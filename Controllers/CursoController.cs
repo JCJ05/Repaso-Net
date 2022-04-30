@@ -108,7 +108,7 @@ namespace Repaso_Net.Controllers {
          
          public IActionResult VerCurso(int id){
 
-             var curso = _context.DataCursos.Find(id);
+             var curso = _context.DataCursos.Include(e => e.usuario).Where(e => e.Id == id).FirstOrDefault();
              return View(curso);             
 
          }
