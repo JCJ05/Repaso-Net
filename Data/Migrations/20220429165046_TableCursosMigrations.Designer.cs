@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Repaso_Net.Data;
@@ -9,9 +10,10 @@ using Repaso_Net.Data;
 namespace Repaso_Net.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220429165046_TableCursosMigrations")]
+    partial class TableCursosMigrations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -231,9 +233,6 @@ namespace Repaso_Net.Data.Migrations
                         .HasColumnName("id")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<byte[]>("archivo")
-                        .HasColumnType("bytea");
-
                     b.Property<int>("cupo")
                         .HasColumnType("integer");
 
@@ -243,9 +242,6 @@ namespace Repaso_Net.Data.Migrations
                     b.Property<DateTime>("fechaInicio")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<string>("fileBase64")
-                        .HasColumnType("text");
-
                     b.Property<string>("horario")
                         .HasColumnType("text");
 
@@ -253,9 +249,6 @@ namespace Repaso_Net.Data.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("nombre")
-                        .HasColumnType("text");
-
-                    b.Property<string>("nombrefile")
                         .HasColumnType("text");
 
                     b.Property<decimal>("precio")

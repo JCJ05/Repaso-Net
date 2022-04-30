@@ -11,7 +11,7 @@ namespace Repaso_Net.Models {
         public string apellidos { get; set; }
 
         [PersonalData]
-        public int identificacion { get; set; }
+        public string identificacion { get; set; }
 
         [PersonalData]
         public string direccion { get; set; }

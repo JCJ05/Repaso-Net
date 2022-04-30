@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Repaso_Net.Data;
@@ -9,9 +10,10 @@ using Repaso_Net.Data;
 namespace Repaso_Net.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220429153236_UpdateFieldIdenticaciion")]
+    partial class UpdateFieldIdenticaciion
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -223,54 +225,6 @@ namespace Repaso_Net.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("Repaso_Net.Models.Curso", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<byte[]>("archivo")
-                        .HasColumnType("bytea");
-
-                    b.Property<int>("cupo")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("fechaFin")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<DateTime>("fechaInicio")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<string>("fileBase64")
-                        .HasColumnType("text");
-
-                    b.Property<string>("horario")
-                        .HasColumnType("text");
-
-                    b.Property<string>("informacion")
-                        .HasColumnType("text");
-
-                    b.Property<string>("nombre")
-                        .HasColumnType("text");
-
-                    b.Property<string>("nombrefile")
-                        .HasColumnType("text");
-
-                    b.Property<decimal>("precio")
-                        .HasColumnType("numeric");
-
-                    b.Property<string>("usuarioId")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("usuarioId");
-
-                    b.ToTable("cursos");
-                });
-
             modelBuilder.Entity("Repaso_Net.Models.Usuario", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
@@ -339,15 +293,6 @@ namespace Repaso_Net.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Repaso_Net.Models.Curso", b =>
-                {
-                    b.HasOne("Repaso_Net.Models.Usuario", "usuario")
-                        .WithMany()
-                        .HasForeignKey("usuarioId");
-
-                    b.Navigation("usuario");
                 });
 #pragma warning restore 612, 618
         }
