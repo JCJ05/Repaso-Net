@@ -7,8 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Repaso_Net
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Repaso-Net\
-=======
-build_property.ProjectDir = D:\Documentos\USMP\Semestre virtual 2022 - I\Ingeniería de Software II\ASUP\Repaso-Net\
->>>>>>> 60bf522f04d923116ce23af56a205e4b660604d8
+build_property.ProjectDir = c:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Repaso-Net\

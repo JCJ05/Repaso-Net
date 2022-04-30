@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "aeKDESvdokPUVXnNRBi71CZDRk/tufR/v9Fikfoqs5wNH1ICqzqynnIoE0oKRTJ1yCxGQvyGXMU/KazAIL6Zow==",
   "success": true,
   "projectFilePath": "C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
-=======
-  "dgSpecHash": "i+ApBU7PZe2jChm2de/6vZlR2oT2QELYsU2WUsUeJWz0QAPy+zjtTsDZS5eZHMRd6NiNaYIPlQTAE4Qsv0X6fw==",
-  "success": true,
-  "projectFilePath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
->>>>>>> 60bf522f04d923116ce23af56a205e4b660604d8
   "expectedPackageFiles": [
     "C:\\Users\\Julio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
@@ -156,11 +150,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-<<<<<<< HEAD
       "message": "Problem reading the cache file C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-=======
-      "message": "Problema al leer el archivo de caché D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
->>>>>>> 60bf522f04d923116ce23af56a205e4b660604d8
     }
   ]
 }
