@@ -1,5 +1,9 @@
 @model Repaso_Net.Models.Curso
 
+@{   
+    Layout = "_Layout";
+    
+}
 
 <div class="container">
 
@@ -19,7 +23,7 @@
                 <p class="card-text"><strong>Fecha Fin:</strong> @Model.fechaFin.ToString("dd/MM/yyyy")</p>
                 <p class="card-text"><strong>Precio:</strong> S/ @Model.precio</p>
                 <p class="card-text"><strong>Cupos:</strong> @Model.cupo cupos disponibles</p>
-                <p class="card-text">Descripcion: @Model.informacion</p>
+                <p class="card-text"><strong>Descripción:</strong> @Model.informacion</p>
                 <a href="#" class="btn btn-primary">Inscribirse</a>
               </div>
 

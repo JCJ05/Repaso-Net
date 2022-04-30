@@ -109,6 +109,7 @@ namespace Repaso_Net.Controllers {
          public IActionResult VerCurso(int id){
 
              var curso = _context.DataCursos.Find(id);
+             ViewData["Title"] = "Curso - " + curso.nombre;
              return View(curso);             
 
          }
