@@ -1,3 +1,33 @@
+<h3>Filtros:</h3>
+
+<div class="row">
+
+    <form class="form-row">
+        
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="date" class="form-control mb-2 mr-sm-2" id="fecha">
+        </div>
+
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="precio">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+        </div>
+
+    </form>
+
+
+</div>
+
 <div class="row">
     @foreach (var item in Model)
     {
@@ -8,7 +38,7 @@
             <div class="card-body">
                 <h5 class="card-title">@item.nombre</h5>
                 <p class="card-text">@item.informacion</p>
-                <a href="#" class="btn btn-primary">Detalle</a>
+                <a asp-controller="Curso" asp-action="DetalleCurso" asp-route-id="@item.Id" class="btn btn-primary">Detalle</a>
             </div>
         </div>
 

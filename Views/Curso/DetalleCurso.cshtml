@@ -1,0 +1,15 @@
+@model Repaso_Net.Models.Curso
+
+<div class="card">
+    <img src="data:image/png;base64,@Html.DisplayFor(model => model.fileBase64)" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Html.DisplayFor(model => model.nombre)</h5>
+        <p class="card-text">@Html.DisplayFor(model=> model.informacion)</p>
+        <p class="card-text">Fecha de inicio: @Html.DisplayFor(model => model.fechaInicio)</p>
+        <p class="card-text">Fecha de fin: @Html.DisplayFor(model => model.fechaFin)</p>
+        <p class="card-text">Horario: @Html.DisplayFor(model => model.horario)</p>
+        <p class="card-text">Cupos: @Html.DisplayFor(model => model.cupo) personas</p>
+        <p class="card-text">Precio: S/. @Html.DisplayFor(model => model.precio)</p>
+        <a class="btn btn-primary">Inscribirse</a>
+    </div>
+</div>
