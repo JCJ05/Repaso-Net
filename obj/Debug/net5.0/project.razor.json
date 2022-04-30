@@ -15619,11 +15619,6 @@
   "RootNamespace": "Repaso_Net",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Views\\Curso\\DetalleCurso.cshtml",
-      "TargetPath": "Views\\Curso\\DetalleCurso.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
