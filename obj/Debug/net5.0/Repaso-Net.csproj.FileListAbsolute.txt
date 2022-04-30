@@ -353,8 +353,6 @@ D:\Documentos\USMP\Semestre virtual 2022 - I\Ingeniería de Software II\ASUP\Rep
 C:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Views\Curso\EditarCurso.cshtml.g.cs
 D:\Documentos\USMP\Semestre virtual 2022 - I\Ingeniería de Software II\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Views\Curso\ListarCursos.cshtml.g.cs
 D:\Documentos\USMP\Semestre virtual 2022 - I\Ingeniería de Software II\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Views\Curso\RegistrarCurso.cshtml.g.cs
-D:\Documentos\USMP\Semestre virtual 2022 - I\Ingeniería de Software II\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Views\Curso\Index.cshtml.g.cs
-D:\Documentos\USMP\Semestre virtual 2022 - I\Ingeniería de Software II\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Views\Curso\DetalleCurso.cshtml.g.cs
 >>>>>>> 60bf522f04d923116ce23af56a205e4b660604d8
 D:\Documentos\USMP\Semestre virtual 2022 - I\Ingeniería de Software II\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Views\Curso\EditarCurso.cshtml.g.cs
 C:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Views\Curso\DetalleCurso.cshtml.g.cs

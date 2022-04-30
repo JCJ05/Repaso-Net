@@ -28,39 +28,6 @@ namespace Repaso_Net.Controllers {
             _context = context;
             _userManager = userManager;
         }
-        
-        public IActionResult Index(){
-            return View(_context.DataCursos);
-        }
-
-        /*public IActionResult Index(string nombre, string fechaInicio, string precio)
-        {
-            var cursos = _context.DataCursos.ToList();
-
-            var query1 = cursos;
-            var query2 = cursos;
-            var query3 = cursos;
-            
-            if(!nombre.Equals("")){
-                query1 = query1.Where(c => c.nombre.Contains(nombre)).ToList();
-            }
-
-            if(!fechaInicio.Equals("")){
-                query2 = query2.Where(c => c.fechaInicio <= DateTime.ParseExact(fechaInicio, "yyyy-MM-dd", null)).ToList();
-            }
-
-            if(!precio.Equals("")){
-                
-            }
-
-            return View(cursos);
-        }*/
-
-        public IActionResult DetalleCurso(int id){
-
-            var curso = _context.DataCursos.FirstOrDefault(c => c.Id == id);
-            return View(curso);
-        }
 
         [Authorize(Roles = "administrador")]
         public IActionResult RegistrarCurso() {
