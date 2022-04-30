@@ -108,7 +108,12 @@ namespace Repaso_Net.Controllers {
          
          public IActionResult VerCurso(int id){
 
+<<<<<<< HEAD
              var curso = _context.DataCursos.Include(e => e.usuario).Where(e => e.Id == id).FirstOrDefault();
+=======
+             var curso = _context.DataCursos.Find(id);
+             ViewData["Title"] = "Curso - " + curso.nombre;
+>>>>>>> 6d890bfd37eedff05791b51202931e8a57a23934
              return View(curso);             
 
          }
