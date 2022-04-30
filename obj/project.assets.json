@@ -7800,11 +7800,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
+      "projectUniqueName": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
       "projectName": "Repaso-Net",
-      "projectPath": "d:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
+      "projectPath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
       "packagesPath": "C:\\Users\\maran\\.nuget\\packages\\",
-      "outputPath": "d:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\obj\\",
+      "outputPath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\maran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7893,5 +7893,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

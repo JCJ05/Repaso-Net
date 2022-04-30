@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "aeKDESvdokPUVXnNRBi71CZDRk/tufR/v9Fikfoqs5wNH1ICqzqynnIoE0oKRTJ1yCxGQvyGXMU/KazAIL6Zow==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
-=======
   "dgSpecHash": "i+ApBU7PZe2jChm2de/6vZlR2oT2QELYsU2WUsUeJWz0QAPy+zjtTsDZS5eZHMRd6NiNaYIPlQTAE4Qsv0X6fw==",
   "success": true,
   "projectFilePath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
->>>>>>> 51b080c2fb62a8af0405f4c20c1ee6d0d7f1d176
   "expectedPackageFiles": [
     "C:\\Users\\maran\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\maran\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
@@ -152,5 +146,12 @@
     "C:\\Users\\maran\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\maran\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

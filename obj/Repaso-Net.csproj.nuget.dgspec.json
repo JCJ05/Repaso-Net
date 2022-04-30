@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
-        "projectName": "Repaso-Net",
-        "projectPath": "C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
-        "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\obj\\",
-=======
     "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj": {}
   },
   "projects": {
@@ -25,7 +12,6 @@
         "projectPath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
         "packagesPath": "C:\\Users\\maran\\.nuget\\packages\\",
         "outputPath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\obj\\",
->>>>>>> 51b080c2fb62a8af0405f4c20c1ee6d0d7f1d176
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maran\\AppData\\Roaming\\NuGet\\NuGet.Config",
