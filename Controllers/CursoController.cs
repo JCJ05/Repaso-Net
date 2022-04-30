@@ -29,7 +29,9 @@ namespace Repaso_Net.Controllers {
             _userManager = userManager;
         }
         
-        
+        public IActionResult Index(){
+            return View(_context.DataCursos);
+        }
         public IActionResult RegistrarCurso() {
 
             var usuarios = _userManager.GetUsersInRoleAsync("profesor").Result;

@@ -1,0 +1,17 @@
+<div class="row">
+    @foreach (var item in Model)
+    {
+    <div class="col-3">
+
+        <div class="card" style="width: 18rem;">
+            <img src="data:image/png;base64,@item.fileBase64" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@item.nombre</h5>
+                <p class="card-text">@item.informacion</p>
+                <a href="#" class="btn btn-primary">Detalle</a>
+            </div>
+        </div>
+
+    </div>
+    }
+</div>
