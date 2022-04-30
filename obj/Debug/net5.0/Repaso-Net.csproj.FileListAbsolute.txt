@@ -174,3 +174,5 @@ C:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Re
 C:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Repaso-Net\bin\Debug\net5.0\MimeKit.dll
 C:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Repaso-Net\bin\Debug\net5.0\BouncyCastle.Crypto.dll
 C:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+C:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Views\Curso\RegistrarCurso.cshtml.g.cs
+C:\Users\Julio\OneDrive - Universidad de San Martin de Porres\Documentos\ASUP\Repaso-Net\obj\Debug\net5.0\Razor\Views\Curso\ListarCursos.cshtml.g.cs

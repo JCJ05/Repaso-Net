@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EH9JVfB/8PCdU4Ktk3/ot4APfaGnCr57fkrQ/rD6r+ntIUpuFZb+CnVE7pRFMyB2ggn3UI0hoB2Kwyzqb5p36Q==",
+  "dgSpecHash": "aeKDESvdokPUVXnNRBi71CZDRk/tufR/v9Fikfoqs5wNH1ICqzqynnIoE0oKRTJ1yCxGQvyGXMU/KazAIL6Zow==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
+  "projectFilePath": "C:\\Users\\Julio\\OneDrive - Universidad de San Martin de Porres\\Documentos\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",

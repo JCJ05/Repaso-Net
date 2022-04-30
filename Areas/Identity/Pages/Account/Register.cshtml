@@ -1,32 +1,37 @@
 @page
 @model RegisterModel
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Registrar Usuario";
 }
 
 <h1>@ViewData["Title"]</h1>
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+        <form id="formulario" asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <h4>Create a new account.</h4>
             <hr />
             <div asp-validation-summary="All" class="text-danger"></div>
+   
+              <div class="form-group">
+                <label asp-for="Input.identificacion"></label>
+                <input id="dni" asp-for="Input.identificacion" class="form-control" minlength="8" onkeypress="return valideKey(event);" onblur="verificarDni()"  autocomplete="off" onpaste="return false"/>
+                <span asp-validation-for="Input.identificacion" class="text-danger"></span>
+                <span id="validacion" class="text-success"></span>
+                <span id="error" class="text-error"></span>
+            </div>
+
              <div class="form-group">
                 <label asp-for="Input.nombres"></label>
-                <input asp-for="Input.nombres" class="form-control" />
+                <input id = "nombre" asp-for="Input.nombres" class="form-control" />
                 <span asp-validation-for="Input.nombres" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Input.apellidos"></label>
-                <input asp-for="Input.apellidos" class="form-control" />
+                <input id="apellido"  asp-for="Input.apellidos" class="form-control" />
                 <span asp-validation-for="Input.apellidos" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Input.identificacion"></label>
-                <input asp-for="Input.identificacion" class="form-control" />
-                <span asp-validation-for="Input.identificacion" class="text-danger"></span>
-            </div>
+           
             <div class="form-group">
                 <label asp-for="Input.direccion"></label>
                 <input asp-for="Input.direccion" class="form-control" />
@@ -47,7 +52,7 @@
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <button type="submit" class="btn btn-primary">Registrar</button>
+            <button disabled id="btnRegistrar" type="submit" class="btn btn-primary">Registrar</button>
         </form>
     </div>
     <div class="col-md-6 col-md-offset-2">
@@ -84,4 +89,121 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+
+    <script type="text/javascript">
+
+        let cont = 0;
+
+        window.addEventListener('load', function () {
+            
+           document.getElementById('nombre').disabled = true;
+            document.getElementById('apellido').disabled = true;
+
+        });
+
+        document.querySelector('#formulario').addEventListener('submit' , () => {
+
+                document.getElementById('nombre').disabled = false;
+                document.getElementById('apellido').disabled = false;
+               
+        });
+
+          document.querySelector('#dni').addEventListener('input', function(e) {
+                
+                const dni = e.target.value;
+                
+                if(dni.length == 8){
+                    verificarDni();
+                }
+              
+          });
+
+		function valideKey(evt){
+
+			var code = (evt.which) ? evt.which : evt.keyCode;
+            
+			
+			if(code>=48 && code<=57) { 
+                
+                 const dni = document.getElementById('dni').value;   
+                 cont = dni.length;
+            
+                if(cont>=8){
+
+                    return false;
+
+                }
+
+			  return true;
+
+			} else{       
+
+			  return false;
+
+			}
+		}
+
+        function verificarDni(){
+
+        
+           const dni = document.getElementById('dni').value;
+           const token = '18ac37a746ac4281d5857ddf4f655684725d86748852c16cd04d6e7f14145d00';
+           const validacion = document.getElementById('validacion');
+           const error = document.getElementById('error');
+           const btn = document.getElementById('btnRegistrar');
+           const nombre = document.getElementById('nombre');
+           const apellido = document.getElementById('apellido');
+           
+
+           if(dni){
+
+               console.log(dni.length , dni);
+              
+              if(dni.length == 8){
+
+                  
+                 
+                 const url = `https://apiperu.dev/api/dni/${dni}`;
+
+                 fetch(url , {
+                     method: 'GET',
+                     headers: {
+                         'Content-Type': 'application/json',
+                         'Authorization': 'Bearer ' + token,
+                     }
+                 })
+                    .then(response => response.json())
+                    .then(result => {
+                         
+                        console.log(result);
+                        const {success , data} = result;
+                        const {nombres , apellido_paterno , apellido_materno} = data;
+                        
+                        if(success){
+                          
+                            error.innerHTML = '';
+                            validacion.innerHTML = 'Correo validado';
+                            nombre.value = nombres;
+                            apellido.value = apellido_paterno + ' ' + apellido_materno;
+                            btn.disabled = false;
+                            
+
+                        }else {
+                            
+                            validacion.innerHTML = '';
+                            error.innerHTML = 'Correo no validado';
+                            btn.disabled = true;
+                            
+                        }
+ 
+                    })
+
+              }
+
+           }
+           
+
+        }
+
+	</script>
 }

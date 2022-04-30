@@ -47,7 +47,7 @@ namespace Repaso_Net.Areas.Identity.Pages.Account.Manage
         [Required]
         [DataType(DataType.Text)]
         [Display(Name = "Identificación: ")]
-        public int identificacion { get; set; }
+        public string identificacion { get; set; }
 
         [Required]
         [DataType(DataType.Text)]

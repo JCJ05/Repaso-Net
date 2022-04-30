@@ -64,7 +64,7 @@ namespace Repaso_Net.Areas.Identity.Pages.Account
                         int puerto = 587;
 
                         string GmailUser = "soyelputoamocabron23@gmail.com";
-                        string GmailPass = "";
+                        string GmailPass = "revels321";
 
                         string receptor = email;
 

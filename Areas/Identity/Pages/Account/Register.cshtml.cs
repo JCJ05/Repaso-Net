@@ -26,17 +26,20 @@ namespace Repaso_Net.Areas.Identity.Pages.Account
         private readonly UserManager<Usuario> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        RoleManager<IdentityRole> _roleManager;
 
         public RegisterModel(
             UserManager<Usuario> userManager,
             SignInManager<Usuario> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender ,
+            RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         [BindProperty]
@@ -49,18 +52,18 @@ namespace Repaso_Net.Areas.Identity.Pages.Account
         public class InputModel
         {   
         [Required(ErrorMessage ="El campo nombre es requerido")]
-        [DataType(DataType.Text)]
         [Display(Name = "Nombres: ")]
         public string nombres { get; set; }
 
         [Required(ErrorMessage ="El campo apellido es requerido")]
-        [DataType(DataType.Text)]
         [Display(Name = "Apellidos: ")]
         public string apellidos { get; set; }
 
         [Required(ErrorMessage ="El campo identificación es requerido")]
+        [DataType(DataType.Text)]
+        [MinLength(8, ErrorMessage ="La identificación debe tener al menos 8 caracteres")]
         [Display(Name = "Identificación: ")]
-        public int identificacion { get; set; }
+        public string identificacion { get; set; }
 
         [Required(ErrorMessage ="El campo dirección es requerido")]
         [DataType(DataType.Text)]
@@ -94,6 +97,9 @@ namespace Repaso_Net.Areas.Identity.Pages.Account
         {
             returnUrl ??= Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+            
+            var role = await _roleManager.FindByIdAsync("1002");
+
             if (ModelState.IsValid)
             {
                 var user = new Usuario {
@@ -110,6 +116,8 @@ namespace Repaso_Net.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
 
+                    await _userManager.AddToRoleAsync(user, role.Name);
+                    
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
