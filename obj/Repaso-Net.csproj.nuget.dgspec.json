@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj": {}
+    "d:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj": {
+    "d:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
+        "projectUniqueName": "d:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
         "projectName": "Repaso-Net",
-        "projectPath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
+        "projectPath": "d:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
         "packagesPath": "C:\\Users\\maran\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\obj\\",
+        "outputPath": "d:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -86,7 +86,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.15, 5.0.15]"
+              "version": "[5.0.16, 5.0.16]"
             }
           ],
           "frameworkReferences": {
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i+ApBU7PZe2jChm2de/6vZlR2oT2QELYsU2WUsUeJWz0QAPy+zjtTsDZS5eZHMRd6NiNaYIPlQTAE4Qsv0X6fw==",
+  "dgSpecHash": "nUbrBDMHQaAAoAkWqdkgbCr1M9gnhVbnU0c1tIHJpYUsSaedcKzCeFstdTXxr05dhAbHPfhgRTIhKQH5op+HDA==",
   "success": true,
-  "projectFilePath": "D:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
+  "projectFilePath": "d:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Repaso-Net.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maran\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\maran\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
@@ -144,7 +144,7 @@
     "C:\\Users\\maran\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\maran\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\maran\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\maran\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
+    "C:\\Users\\maran\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
   ],
   "logs": []
 }
