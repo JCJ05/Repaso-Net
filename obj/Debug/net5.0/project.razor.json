@@ -15617,6 +15617,7 @@
     "CSharpLanguageVersion": 900
   },
   "RootNamespace": "Repaso_Net",
+<<<<<<< HEAD
   "Documents": [
     {
       "FilePath": "d:\\Documentos\\USMP\\Semestre virtual 2022 - I\\Ingeniería de Software II\\ASUP\\Repaso-Net\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -15739,5 +15740,8 @@
       "FileKind": "mvc"
     }
   ],
+=======
+  "Documents": [],
+>>>>>>> f969922aba54d07c08b6b4bbb4f6963460358b79
   "SerializationFormat": "0.2"
 }
